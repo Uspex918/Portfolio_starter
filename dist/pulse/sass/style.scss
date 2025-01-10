@@ -1,0 +1,56 @@
+@import "libs/animate";
+@import "libs/bootstrap-reboot.min";
+@import "libs/font";
+@import "libs/fontello";
+@import "libs/modern-normalize.min";
+@import "libs/slick";
+@import "libs/stylesheet";
+@import "libs/tiny-slider";
+
+@import "base/variables";
+@import "base/animations";
+// @import "base.animate.css";
+
+* {
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "fontello";
+}
+
+// * {
+//   font-family: "fontello", sans-serif;
+// }
+main-color {
+  background-color: rgb(199, 1, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  position: relative;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+@import "blocks/promo";
+@import "blocks/header.scss";
+@import "blocks/buttons";
+@import "blocks/advantages";
+@import "blocks/consultation";
+@import "blocks/titles";
+@import "blocks/forms";
+@import "blocks/carousel";
+@import "blocks/catalog";
+@import "blocks/feed";
+@import "blocks/footer";
+@import "blocks/modal";
+@import "blocks/pageup";
+
+.promo__header {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 9s; /* don't forget to set a duration! */
+}
