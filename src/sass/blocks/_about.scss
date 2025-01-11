@@ -3,8 +3,7 @@
   &__wrapper {
     display: grid;
     grid-template-columns: 37.3% 59.7%;
-    grid-template-rows: minmax(20vh, auto) minmax(20vh, auto);
-    grid-auto-rows: minmax(20vh, auto);
+    grid-template-rows: minmax(20vh, auto);
     column-gap: 3.65vw;
     row-gap: 2vw;
   }
@@ -36,7 +35,7 @@
   }
   &__skills {
     display: grid;
-    grid-template: repeat(2, minmax(5.9vw, auto)) / repeat(2, auto);
+    grid-template: repeat(2, minmax(4vw, auto)) / repeat(2, auto);
     column-gap: 2.6vw;
     row-gap: 20px;
     &-item {
