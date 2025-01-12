@@ -1,0 +1,136 @@
+@media (max-width: 1440px) {
+  .menu__block {
+    width: 28vw;
+  }
+  .container {
+    max-width: 69vw;
+  }
+}
+@media (max-width: 1200px) {
+  .sidepanel {
+    display: none;
+  }
+  .container {
+    max-width: 95vw;
+  }
+  .about {
+    &__skills {
+      grid-template: repeat(1, minmax(10px, auto)) / repeat(1, auto);
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .promo {
+    &__btns {
+      width: 70%;
+    }
+  }
+  .menu__block {
+    width: 32vw;
+  }
+  .menu {
+    &__link {
+      padding-left: 20px;
+    }
+  }
+  .about {
+    &__wrapper {
+      grid-template-rows: 300px 380px;
+      column-gap: 2vw;
+    }
+    &__skills {
+      grid-template-columns: auto;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    &_fz48 {
+      font-size: 36px;
+    }
+  }
+  .menu__block {
+    width: 42vw;
+  }
+  .about {
+    padding-top: 5vh;
+    &__wrapper {
+      display: block;
+    }
+    &__photo {
+      img {
+        height: 540px;
+        object-fit: cover;
+      }
+    }
+    &__descr {
+      padding-top: 33px;
+    }
+    &__skills {
+      margin-top: 33px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .skills {
+    &__item {
+      min-height: 270px;
+      margin-top: 20px;
+    }
+    &__items {
+      display: block;
+    }
+    &__ratings {
+      display: block;
+      &-item {
+        display: grid;
+        grid-template: minmax(50px, auto) 14px / 200px 35px;
+
+        margin-top: 60px;
+      }
+      &-line {
+        width: 100%;
+      }
+    }
+  }
+  .resume {
+    padding-top: 13vh;
+    &__wrapper {
+      padding: 0;
+      display: block;
+      column-gap: 7vw;
+    }
+  }
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}
+.promo {
+  padding-left: 20px;
+  background: url("../img/main_bg.jpg") 60% / cover no-repeat;
+  &__btns {
+    margin-top: 35px;
+    font-size: 12px;
+    width: 90%;
+  }
+}
+.title {
+  &_fz48 {
+    font-size: 26px;
+  }
+}
+.btn {
+  padding: 12px 15px;
+}
+.menu__block {
+  width: 75vw;
+}
+.title {
+  &_fz36 {
+    font-size: 24px;
+  }
+}
