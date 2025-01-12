@@ -146,7 +146,18 @@
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__photo">
-                    <img src="img/main_photo.jpg" alt="photo">
+                    <!-- <img srcset="img/tom.jpg 400w,
+                    img/main_photo.jpg 300w" sizes="(max-width: 500px) 280px,
+                    (min-width: 501px) 400px" src="img/main_photo.jpg" alt="photo"> -->
+                    <!-- <picture>
+                        <source media="(max-width: 500px)" srcset="img/tom.jpg">
+                        <source media="(min-width: 1000px)" srcset="img/money.jpg">
+                        <img src="img/main_photo.jpg" alt="">
+                    </picture> -->
+                    <picture>
+                        <source type="image/webp" srcset="img/albert.webp">
+                        <img src="img/main_photo.jpg" alt="">
+                    </picture>
                 </div>
                 <div class="about__descr">
                     <h2 class="title title_fz16 about__title">Про меня</h2>
@@ -405,7 +416,7 @@
         </div>
     </section>
 
-    <!-- <section class="portfolio">
+    <section class="portfolio">
         <div class="container">
             <h2 class="title title_fz16 portfolio__title">Навыки</h2>
             <div class="title title_fz36 portfolio__subtitle">Что я использую в работе</div>
@@ -432,9 +443,9 @@
             </div>
         </div>
 
-    </section> -->
+    </section>
 
-    <!-- <section class="price">
+    <section class="price">
         <div class="container">
             <h2 class="title title_fz16 title__section-title">Прайс-лист</h2>
             <div class="divider"></div>
@@ -484,9 +495,9 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="contacts">
+    <section class="contacts">
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="contacts__photo">
@@ -537,7 +548,7 @@
 
             </div>
         </div>
-    </section> -->
+    </section>
 
     <script src="js/script.js"></script>
 </body>

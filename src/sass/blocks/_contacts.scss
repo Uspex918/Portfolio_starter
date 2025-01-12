@@ -7,6 +7,7 @@
     justify-content: space-between;
   }
   &__photo {
+    display: none;
     img {
       width: 100%;
     }
@@ -41,8 +42,7 @@
     margin-top: 30px;
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: repeat(2, 15vw);
-    grid-template-rows: 45px 200px auto;
+    grid-template: 45px 190px 45px / repeat(2, 280px);
     justify-content: space-between;
     row-gap: 30px;
     label {
